@@ -5,7 +5,7 @@ import Chart from 'react-apexcharts'; // Import Chart component
 // material-ui
 import { useTheme, styled } from '@mui/material/styles';
 import { Avatar, Box, Button, Grid, Typography } from '@mui/material';
-
+import sportbg from '../../../assets/images/sportbg.png';
 // project imports
 import MainCard from 'ui-component/cards/MainCard';
 import SkeletonTotalOrderCard from 'ui-component/cards/Skeleton/EarningCard';
@@ -19,7 +19,10 @@ import ChartDataMonth from './chart-data/total-order-month-line-chart';
 import ChartDataYear from './chart-data/total-order-year-line-chart';
 
 const CardWrapper = styled(MainCard)(({ theme }) => ({
-  backgroundColor: theme.palette.primary.dark,
+  backgroundImage:`url(${sportbg})`,
+  // position: 'absolute',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center center',
   color: '#fff',
   overflow: 'hidden',
   position: 'relative',

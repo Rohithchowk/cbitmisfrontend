@@ -27,7 +27,7 @@ const utilities = {
       children: [
         {
           id: 'block-a',
-          title: 'A - Civil Engineering',
+          title: 'Block A',
           type: 'item',
           url: '/icons/tabler-icons',
           breadcrumbs: false,
@@ -36,7 +36,7 @@ const utilities = {
         },
         {
           id: 'block-b',
-          title: 'B - Administrative Block',
+          title: 'Block B',
           type: 'item',
           
           url: '/blocks/Bblock',
@@ -45,7 +45,7 @@ const utilities = {
         },
         {
           id: 'block-c',
-          title: 'C - CSE ',
+          title: 'Block C',
           type: 'item',
           url: '/blocks/Cblock',
           breadcrumbs: false,
@@ -53,7 +53,7 @@ const utilities = {
         },
         {
           id: 'block-g',
-          title: 'G - Mechanical Laborataries',
+          title: 'Block G',
           type: 'item',
           
           url: '/blocks/Gblock',
@@ -62,7 +62,7 @@ const utilities = {
         },
         {
           id: 'block-h',
-          title: 'H - Chemical Laborataries',
+          title: 'Block H',
           type: 'item',
           
           url: '/blocks/Hblock',
@@ -71,7 +71,7 @@ const utilities = {
         },
         {
           id: 'block-l',
-          title: 'L - IT & EEE Block',
+          title: 'Block L',
           type: 'item',
           
           url: '/blocks/Lblock',
@@ -79,7 +79,7 @@ const utilities = {
         },
         {
           id: 'block-m',
-          title: 'M - Biotechnology & AI-DS Block',
+          title: 'Block M',
           type: 'item',
          
           url: '/blocks/Mblock',
@@ -87,7 +87,7 @@ const utilities = {
         },
         {
           id: 'block-n',
-          title: 'N - ECE Block',
+          title: 'Block N',
           type: 'item',
           
           url: '/blocks/Nblock',
@@ -95,7 +95,7 @@ const utilities = {
         },
         {
           id: 'block-k',
-          title: 'K - Chemical Engineering Block',
+          title: 'Block K',
           type: 'item',
           
           url: '/blocks/Kblock',

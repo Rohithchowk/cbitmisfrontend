@@ -4,18 +4,18 @@ import { useState } from 'react';
 // material-ui
 import { styled, useTheme } from '@mui/material/styles';
 import { Avatar, Box, Grid, Menu, MenuItem, Typography } from '@mui/material';
-import blockbg from '../../../assets/images/blockbg.png';
+import sportbg from '../../../assets/images/sportbg.png';
 // project imports
 import MainCard from 'ui-component/cards/MainCard';
 import SkeletonEarningCard from 'ui-component/cards/Skeleton/EarningCard';
 
 // assets
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import EarningIcon from 'assets/images/icons/earning.svg';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const CardWrapper = styled(MainCard)(({ theme }) => ({
-  backgroundImage:`url(${blockbg})`,
+  backgroundImage:`url(${sportbg})`,
   // position: 'absolute',
   backgroundSize: 'cover',
   backgroundPosition: 'center center',
@@ -28,7 +28,7 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
     position: 'absolute',
     width: 210,
     height: 210,
-    background: theme.palette.secondary[800],
+    background: theme.palette.primary[800],
     borderRadius: '50%',
     zIndex:1,
     top: -85,
@@ -44,7 +44,7 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
     zIndex:1,
     width: 210,
     height: 210,
-    background: theme.palette.secondary[800],
+    background: theme.palette.primary[800],
     borderRadius: '50%',
     top: -125,
     right: -15,
@@ -58,7 +58,7 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
 
 // ===========================|| DASHBOARD DEFAULT - EARNING CARD ||=========================== //
 
-const EarningCard = ({ isLoading }) => {
+const Mytest = ({ isLoading }) => {
   const theme = useTheme();
 
   const [anchorEl, setAnchorEl] = useState(null);
@@ -87,29 +87,28 @@ const EarningCard = ({ isLoading }) => {
                       sx={{
                         ...theme.typography.commonAvatar,
                         ...theme.typography.largeAvatar,
-                        backgroundColor: theme.palette.secondary[800],
+                        backgroundColor: theme.palette.primary[800],
+                        color: '#fff',
                         mt: 1
                       }}
                     >
-                      <img src={EarningIcon} alt="Notification" />
+                      <EmojiEventsIcon fontSize="inherit" />
                     </Avatar>
                   </Grid>
                   <Grid item>
-                    <Avatar
+                  <Avatar
                       variant="rounded"
                       sx={{
                         ...theme.typography.commonAvatar,
-                        ...theme.typography.mediumAvatar,
-                        backgroundColor: theme.palette.secondary.dark,
-                        color: theme.palette.secondary[200],
-                        zIndex: 1
+                        ...theme.typography.largeAvatar,
+                        backgroundColor: theme.palette.primary[800],
+                        color: '#fff',
+                        mt: 1
                       }}
-                      aria-controls="menu-earning-card"
-                      aria-haspopup="true"
-                      onClick={handleClick}
                     >
-                      <MoreHorizIcon fontSize="inherit" />
+                      <EmojiEventsIcon fontSize="inherit" />
                     </Avatar>
+                      
                   </Grid>
                 </Grid>
               </Grid>
@@ -123,8 +122,8 @@ const EarningCard = ({ isLoading }) => {
                       sx={{
                         cursor: 'pointer',
                         ...theme.typography.smallAvatar,
-                        backgroundColor: theme.palette.secondary[200],
-                        color: theme.palette.secondary.dark
+                        backgroundColor: theme.palette.primary[200],
+                        color: theme.palette.primary.dark
                       }}
                     >
                       <ArrowUpwardIcon fontSize="inherit" sx={{ transform: 'rotate3d(1, 1, 1, 45deg)' }} />
@@ -137,10 +136,10 @@ const EarningCard = ({ isLoading }) => {
                   sx={{
                     fontSize: '1rem',
                     fontWeight: 500,
-                    color: theme.palette.secondary[200]
+                    color: theme.palette.primary[200]
                   }}
                 >
-                  Number of Blocks
+                  Number of Sports Facilities
                 </Typography>
               </Grid>
             </Grid>
@@ -151,8 +150,8 @@ const EarningCard = ({ isLoading }) => {
   );
 };
 
-EarningCard.propTypes = {
+Mytest.propTypes = {
   isLoading: PropTypes.bool
 };
 
-export default EarningCard;
+export default Mytest;
